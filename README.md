@@ -1,30 +1,14 @@
-# project-2
+# Analysis of GDP per Capita vs CO2 Emission Per Capita
 
+Comparing the yearly changes of both carbon emission and GDP per capita across countries around the world. The goal of this project is to established a ETL pipeline to store the clean datasets in SQL database.
 -----------------------------------------------------------------------------------------------------------------------------------------
+Datasets:
+-----------
+Both of the datasets the CO2 Emission and GDP were collected from World Bank website in csv format.
 
-Project Title  - Analysis of GDP per Capita vs CO2 Emission Per Capita
+Source of Co2 Emission Dataset: https://data.worldbank.org/indicator/EN.ATM.CO2E.PC?end=1990&start=1990&view=bar
 
------------------------------------------------------------------------------------------------------------------------------------------
-Project Description: 
---------------------
-Comparing the yearly changes of both carbon emission and GDP per capita across countries around the world 
-
-GDP is the monetary value of all finished goods and services made within a country during a specific period.
-Carbon emission are emissions stemming from the burning of fossil fuels and the manufacture of cement.
-
------------------------------------------------------------------------------------------------------------------------------------------
-How to Install and Run the Project:
------------------------------------
-Jupyter Notebook - required to run inital coding in order to load to raw CSV files and transform to required format 
-
-Dependencies required: 
-import pandas as pd
-from sqlalchemy import create_engine
-from sqlalchemy import inspect
-import config
-
-ProgresSQL - Schema file to be loaded to create the tables in ProgressSQL
-ProgresSQL to load the two created dataframe 
+Source of GDP Dataset: https://data.worldbank.org/indicator/NY.GDP.PCAP.KD?end=1990&start=1990&view=bar
 
 -----------------------------------------------------------------------------------------------------------------------------------------
 ETL Process:
@@ -59,8 +43,15 @@ A comparison between countries and years can be plotted.
 To determine if there is a relationship between carbon emission per capita and GDP per capita trend analysis can be done
 
 -----------------------------------------------------------------------------------------------------------------------------------------
-Team Members
-   Alistair Nguyen 
-   Parvez Alam
-   Kaushal Patel 
-   Zitarashe Okot
+How to Install and Run the Project:
+-----------------------------------
+Jupyter Notebook - required to run inital coding in order to load to raw CSV files and transform to required format 
+
+Dependencies required: 
+import pandas as pd
+from sqlalchemy import create_engine
+from sqlalchemy import inspect
+import config
+
+ProgresSQL - Schema file to be loaded to create the tables in ProgressSQL
+ProgresSQL to load the two created dataframe 
