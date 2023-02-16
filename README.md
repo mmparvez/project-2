@@ -27,7 +27,7 @@ ProgresSQL - Schema file to be loaded to create the tables in ProgressSQL
 ProgresSQL to load the two created dataframe 
 
 -----------------------------------------------------------------------------------------------------------------------------------------
-ELT Process:
+ETL Process:
 ------------
 
 Extracting Process - 
